@@ -1,0 +1,4 @@
+---
+program_root: "/Users/hgamiui9/gitlab/cetus-launchpad"
+cli_name: "launchpad-cli"
+compile_platform: macos-arm

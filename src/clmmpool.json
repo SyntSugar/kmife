@@ -1,0 +1,1548 @@
+{
+  "address": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498",
+  "name": "pool",
+  "friends": [
+    "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::factory"
+  ],
+  "exposed_functions": [
+    {
+      "name": "accept_rewarder_authority",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u8"
+      ],
+      "return": []
+    },
+    {
+      "name": "add_liqudity_pay_amount",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::AddLiquidityReceipt<T0, T1>"
+      ],
+      "return": [
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "name": "add_liquidity",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "u128",
+        "u64"
+      ],
+      "return": [
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::AddLiquidityReceipt<T0, T1>"
+      ]
+    },
+    {
+      "name": "add_liquidity_fix_coin",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "u64",
+        "bool",
+        "u64"
+      ],
+      "return": [
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::AddLiquidityReceipt<T0, T1>"
+      ]
+    },
+    {
+      "name": "calculate_swap_result",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "bool",
+        "bool",
+        "u64"
+      ],
+      "return": [
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::CalculatedSwapResult"
+      ]
+    },
+    {
+      "name": "check_position_authority",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "checked_close_position",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u64"
+      ],
+      "return": [
+        "bool"
+      ]
+    },
+    {
+      "name": "collect_fee",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u64",
+        "bool"
+      ],
+      "return": [
+        "0x1::coin::Coin<T0>",
+        "0x1::coin::Coin<T1>"
+      ]
+    },
+    {
+      "name": "collect_protocol_fee",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address"
+      ],
+      "return": [
+        "0x1::coin::Coin<T0>",
+        "0x1::coin::Coin<T1>"
+      ]
+    },
+    {
+      "name": "collect_rewarder",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u64",
+        "u8",
+        "bool"
+      ],
+      "return": [
+        "0x1::coin::Coin<T2>"
+      ]
+    },
+    {
+      "name": "fetch_positions",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "u64",
+        "u64"
+      ],
+      "return": [
+        "u64",
+        "vector<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::Position>"
+      ]
+    },
+    {
+      "name": "fetch_ticks",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "u64",
+        "u64",
+        "u64"
+      ],
+      "return": [
+        "u64",
+        "u64",
+        "vector<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::Tick>"
+      ]
+    },
+    {
+      "name": "flash_swap",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "address",
+        "0x1::string::String",
+        "bool",
+        "bool",
+        "u64",
+        "u128"
+      ],
+      "return": [
+        "0x1::coin::Coin<T0>",
+        "0x1::coin::Coin<T1>",
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::FlashSwapReceipt<T0, T1>"
+      ]
+    },
+    {
+      "name": "get_pool_index",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "get_pool_liquidity",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address"
+      ],
+      "return": [
+        "u128"
+      ]
+    },
+    {
+      "name": "get_position",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "u64"
+      ],
+      "return": [
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::Position"
+      ]
+    },
+    {
+      "name": "get_position_tick_range",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "u64"
+      ],
+      "return": [
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64",
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+      ]
+    },
+    {
+      "name": "get_rewarder_len",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address"
+      ],
+      "return": [
+        "u8"
+      ]
+    },
+    {
+      "name": "get_tick_spacing",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "initialize_rewarder",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "address",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "new",
+      "visibility": "friend",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "u64",
+        "u128",
+        "u64",
+        "0x1::string::String",
+        "0x1::account::SignerCapability"
+      ],
+      "return": [
+        "0x1::string::String"
+      ]
+    },
+    {
+      "name": "open_position",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64",
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "pause",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "remove_liquidity",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u128",
+        "u64"
+      ],
+      "return": [
+        "0x1::coin::Coin<T0>",
+        "0x1::coin::Coin<T1>"
+      ]
+    },
+    {
+      "name": "repay_add_liquidity",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "0x1::coin::Coin<T0>",
+        "0x1::coin::Coin<T1>",
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::AddLiquidityReceipt<T0, T1>"
+      ],
+      "return": []
+    },
+    {
+      "name": "repay_flash_swap",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "0x1::coin::Coin<T0>",
+        "0x1::coin::Coin<T1>",
+        "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::FlashSwapReceipt<T0, T1>"
+      ],
+      "return": []
+    },
+    {
+      "name": "reset_init_price",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "address",
+        "u128"
+      ],
+      "return": []
+    },
+    {
+      "name": "reset_init_price_v2",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u128"
+      ],
+      "return": []
+    },
+    {
+      "name": "swap_pay_amount",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::FlashSwapReceipt<T0, T1>"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "transfer_rewarder_authority",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u8",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "unpause",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "update_emission",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u8",
+        "u128"
+      ],
+      "return": []
+    },
+    {
+      "name": "update_fee_rate",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "update_pool_uri",
+      "visibility": "public",
+      "is_entry": false,
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "params": [
+        "&signer",
+        "address",
+        "0x1::string::String"
+      ],
+      "return": []
+    }
+  ],
+  "structs": [
+    {
+      "name": "AcceptRewardAuthEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "u8"
+        },
+        {
+          "name": "authority",
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "name": "AddLiquidityEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "tick_lower",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "tick_upper",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "liquidity",
+          "type": "u128"
+        },
+        {
+          "name": "amount_a",
+          "type": "u64"
+        },
+        {
+          "name": "amount_b",
+          "type": "u64"
+        },
+        {
+          "name": "index",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "AddLiquidityReceipt",
+      "is_native": false,
+      "abilities": [],
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "amount_a",
+          "type": "u64"
+        },
+        {
+          "name": "amount_b",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "CalculatedSwapResult",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "amount_in",
+          "type": "u64"
+        },
+        {
+          "name": "amount_out",
+          "type": "u64"
+        },
+        {
+          "name": "fee_amount",
+          "type": "u64"
+        },
+        {
+          "name": "fee_rate",
+          "type": "u64"
+        },
+        {
+          "name": "after_sqrt_price",
+          "type": "u128"
+        },
+        {
+          "name": "is_exceed",
+          "type": "bool"
+        },
+        {
+          "name": "step_results",
+          "type": "vector<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::SwapStepResult>"
+        }
+      ]
+    },
+    {
+      "name": "ClosePositionEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "CollectFeeEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "index",
+          "type": "u64"
+        },
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "amount_a",
+          "type": "u64"
+        },
+        {
+          "name": "amount_b",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "CollectProtocolFeeEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "amount_a",
+          "type": "u64"
+        },
+        {
+          "name": "amount_b",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "CollectRewardEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pos_index",
+          "type": "u64"
+        },
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "index",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "FlashSwapReceipt",
+      "is_native": false,
+      "abilities": [],
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "a2b",
+          "type": "bool"
+        },
+        {
+          "name": "partner_name",
+          "type": "0x1::string::String"
+        },
+        {
+          "name": "pay_amount",
+          "type": "u64"
+        },
+        {
+          "name": "ref_fee_amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "OpenPositionEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "name": "tick_lower",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "tick_upper",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "index",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "Pool",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [
+        {
+          "constraints": []
+        },
+        {
+          "constraints": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "index",
+          "type": "u64"
+        },
+        {
+          "name": "collection_name",
+          "type": "0x1::string::String"
+        },
+        {
+          "name": "coin_a",
+          "type": "0x1::coin::Coin<T0>"
+        },
+        {
+          "name": "coin_b",
+          "type": "0x1::coin::Coin<T1>"
+        },
+        {
+          "name": "tick_spacing",
+          "type": "u64"
+        },
+        {
+          "name": "fee_rate",
+          "type": "u64"
+        },
+        {
+          "name": "liquidity",
+          "type": "u128"
+        },
+        {
+          "name": "current_sqrt_price",
+          "type": "u128"
+        },
+        {
+          "name": "current_tick_index",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "fee_growth_global_a",
+          "type": "u128"
+        },
+        {
+          "name": "fee_growth_global_b",
+          "type": "u128"
+        },
+        {
+          "name": "fee_protocol_coin_a",
+          "type": "u64"
+        },
+        {
+          "name": "fee_protocol_coin_b",
+          "type": "u64"
+        },
+        {
+          "name": "tick_indexes",
+          "type": "0x1::table::Table<u64, 0x1::bit_vector::BitVector>"
+        },
+        {
+          "name": "ticks",
+          "type": "0x1::table::Table<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64, 0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::Tick>"
+        },
+        {
+          "name": "rewarder_infos",
+          "type": "vector<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::Rewarder>"
+        },
+        {
+          "name": "rewarder_last_updated_time",
+          "type": "u64"
+        },
+        {
+          "name": "positions",
+          "type": "0x1::table::Table<u64, 0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::Position>"
+        },
+        {
+          "name": "position_index",
+          "type": "u64"
+        },
+        {
+          "name": "is_pause",
+          "type": "bool"
+        },
+        {
+          "name": "uri",
+          "type": "0x1::string::String"
+        },
+        {
+          "name": "signer_cap",
+          "type": "0x1::account::SignerCapability"
+        },
+        {
+          "name": "open_position_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::OpenPositionEvent>"
+        },
+        {
+          "name": "close_position_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::ClosePositionEvent>"
+        },
+        {
+          "name": "add_liquidity_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::AddLiquidityEvent>"
+        },
+        {
+          "name": "remove_liquidity_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::RemoveLiquidityEvent>"
+        },
+        {
+          "name": "swap_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::SwapEvent>"
+        },
+        {
+          "name": "collect_protocol_fee_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::CollectProtocolFeeEvent>"
+        },
+        {
+          "name": "collect_fee_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::CollectFeeEvent>"
+        },
+        {
+          "name": "update_fee_rate_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::UpdateFeeRateEvent>"
+        },
+        {
+          "name": "update_emission_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::UpdateEmissionEvent>"
+        },
+        {
+          "name": "transfer_reward_auth_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::TransferRewardAuthEvent>"
+        },
+        {
+          "name": "accept_reward_auth_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::AcceptRewardAuthEvent>"
+        },
+        {
+          "name": "collect_reward_events",
+          "type": "0x1::event::EventHandle<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::CollectRewardEvent>"
+        }
+      ]
+    },
+    {
+      "name": "Position",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "u64"
+        },
+        {
+          "name": "liquidity",
+          "type": "u128"
+        },
+        {
+          "name": "tick_lower_index",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "tick_upper_index",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "fee_growth_inside_a",
+          "type": "u128"
+        },
+        {
+          "name": "fee_owed_a",
+          "type": "u64"
+        },
+        {
+          "name": "fee_growth_inside_b",
+          "type": "u128"
+        },
+        {
+          "name": "fee_owed_b",
+          "type": "u64"
+        },
+        {
+          "name": "rewarder_infos",
+          "type": "vector<0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::pool::PositionRewarder>"
+        }
+      ]
+    },
+    {
+      "name": "PositionRewarder",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "growth_inside",
+          "type": "u128"
+        },
+        {
+          "name": "amount_owed",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "RemoveLiquidityEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "tick_lower",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "tick_upper",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "liquidity",
+          "type": "u128"
+        },
+        {
+          "name": "amount_a",
+          "type": "u64"
+        },
+        {
+          "name": "amount_b",
+          "type": "u64"
+        },
+        {
+          "name": "index",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "Rewarder",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "coin_type",
+          "type": "0x1::type_info::TypeInfo"
+        },
+        {
+          "name": "authority",
+          "type": "address"
+        },
+        {
+          "name": "pending_authority",
+          "type": "address"
+        },
+        {
+          "name": "emissions_per_second",
+          "type": "u128"
+        },
+        {
+          "name": "growth_global",
+          "type": "u128"
+        }
+      ]
+    },
+    {
+      "name": "SwapEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "atob",
+          "type": "bool"
+        },
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "swap_from",
+          "type": "address"
+        },
+        {
+          "name": "partner",
+          "type": "0x1::string::String"
+        },
+        {
+          "name": "amount_in",
+          "type": "u64"
+        },
+        {
+          "name": "amount_out",
+          "type": "u64"
+        },
+        {
+          "name": "ref_amount",
+          "type": "u64"
+        },
+        {
+          "name": "fee_amount",
+          "type": "u64"
+        },
+        {
+          "name": "vault_a_amount",
+          "type": "u64"
+        },
+        {
+          "name": "vault_b_amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "SwapResult",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "amount_in",
+          "type": "u64"
+        },
+        {
+          "name": "amount_out",
+          "type": "u64"
+        },
+        {
+          "name": "fee_amount",
+          "type": "u64"
+        },
+        {
+          "name": "ref_fee_amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "SwapStepResult",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "current_sqrt_price",
+          "type": "u128"
+        },
+        {
+          "name": "target_sqrt_price",
+          "type": "u128"
+        },
+        {
+          "name": "current_liquidity",
+          "type": "u128"
+        },
+        {
+          "name": "amount_in",
+          "type": "u64"
+        },
+        {
+          "name": "amount_out",
+          "type": "u64"
+        },
+        {
+          "name": "fee_amount",
+          "type": "u64"
+        },
+        {
+          "name": "remainer_amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "Tick",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "index",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i64::I64"
+        },
+        {
+          "name": "sqrt_price",
+          "type": "u128"
+        },
+        {
+          "name": "liquidity_net",
+          "type": "0xa7f01413d33ba919441888637ca1607ca0ddcbfa3c0a9ddea64743aaa560e498::i128::I128"
+        },
+        {
+          "name": "liquidity_gross",
+          "type": "u128"
+        },
+        {
+          "name": "fee_growth_outside_a",
+          "type": "u128"
+        },
+        {
+          "name": "fee_growth_outside_b",
+          "type": "u128"
+        },
+        {
+          "name": "rewarders_growth_outside",
+          "type": "vector<u128>"
+        }
+      ]
+    },
+    {
+      "name": "TransferRewardAuthEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "u8"
+        },
+        {
+          "name": "old_authority",
+          "type": "address"
+        },
+        {
+          "name": "new_authority",
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "name": "UpdateEmissionEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "u8"
+        },
+        {
+          "name": "emissions_per_second",
+          "type": "u128"
+        }
+      ]
+    },
+    {
+      "name": "UpdateFeeRateEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "pool_address",
+          "type": "address"
+        },
+        {
+          "name": "old_fee_rate",
+          "type": "u64"
+        },
+        {
+          "name": "new_fee_rate",
+          "type": "u64"
+        }
+      ]
+    }
+  ]
+}
